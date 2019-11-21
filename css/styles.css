@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron&display=swap');
+
+/* Background */
+#tracksuit_background{
+  background:
+    linear-gradient(
+        rgba(255, 0, 0, .4),
+        rgba(255, 0, 0, .4)
+    ),
+    url(../images/tracksuit.jpg);
+  background-size: 150px;
+  background-repeat: round;
+  background-attachment: fixed;
+}
+
+/* Change font and color of text */
+.text_style{
+  background:
+  linear-gradient(
+      rgba(0, 0, 0, .4),
+      rgba(0, 0, 0, .4)
+    );
+  color: #D3D3D3;
+  font-family: 'Orbitron', sans-serif;
+}
+
+/* Creates sidebar */
+.row {
+  display: flex;
+}
+.column {
+  padding: 5px;
+}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  /* border: 1px solid #ccc;
+  background-color: #f1f1f1; */
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+    background:
+  linear-gradient(
+      rgba(0, 0, 0, .60),
+      rgba(0, 0, 0, .60)
+    );
+  color: #D3D3D3;
+  font-family: 'Orbitron', sans-serif;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class
+  background-color: #ccc; */
+.tab button.active {
+    background:
+  linear-gradient(
+      rgba(0, 0, 0, .80),
+      rgba(0, 0, 0, .80)
+    );
+  color: #D3D3D3;
+  font-family: 'Orbitron', sans-serif;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
