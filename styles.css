@@ -1,0 +1,30 @@
+#tracksuit_background{
+  height: 200px;
+  background:
+linear-gradient(
+      rgba(255, 0, 0, 0.45),
+      rgba(255, 0, 0, 0.45)
+    ),
+    url(images/tracksuit.jpg);
+  background-size: 150px;
+  background-repeat: round;
+  background-attachment: fixed;
+}
+
+p{
+  background-color:
+  linear-gradient(
+      rgba(0, 0, 0, .45),
+      rgba(0, 0, 0, .45)
+    );
+  color: white;
+}
+
+h1{
+  background-color:
+  linear-gradient(
+      rgba(0, 0, 0, .45),
+      rgba(0, 0, 0, .45)
+    );
+  color: white;
+}
