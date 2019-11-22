@@ -6,7 +6,7 @@
 </head>
 <body id="tracksuit_background">
 
-    <h1 class="text_style">abi</h1>
+    <h1 id="title" class="text_style" onclick="document.getElementById('tracksuit_background').id = 'young_background';">abi</h1>
 
     <div class="row">
 
@@ -16,14 +16,45 @@
 
             <!-- Tab links -->
             <div class="tab">
-              <button class="tablinks" onclick="open_tab(event, 'Cake')">Cake</button>
+              <button class="tablinks" onclick="open_tab(event, 'Food')">Food</button>
+              <button class="tablinks" onclick="open_tab(event, 'happy_birthday')">Happy Birthday!</button>
             </div>
 
             <!-- Tab content -->
-            <div id="Cake" class="tabcontent">
-              <h4 class="text_style">Here are some photos of me eating cake!</h4>
+            <div id="Food" class="tabcontent">
+              <h4 class="text_style">This is me eating cereal out of a watermelon!</h4>
+                <img src="images/watermelon.jpg" height="300">
+              <h4 class="text_style">And here is a photo of me eating out of a pineapple!</h4>
+                <img src="images/pineapple.jpg" height="300">
               <p class="text_style">Now doesn't that look yum!</p>
             </div>
+
+            <!-- Tab content -->
+            <div id="happy_birthday" class="tabcontent">
+              <p class="text_style">In summer 2016, I post happy birthday to all 800+ of my Facebook friends at once. Below are a few examples of my favorites. Note that each person had a unique photo posted on their wall.</p>
+
+                <div class="row">
+                    <img class="gallery" src="images/cat_1.jpg">
+                    <img class="gallery" src="images/cat_9.jpg">
+                    <img class="gallery" src="images/cat_3.jpg">
+                    <img class="gallery" src="images/cat_4.jpg">
+                </div>
+
+                <div class="row">
+                    <img class="gallery" src="images/cat_5.jpg">
+                    <img class="gallery" src="images/cat_6.jpg">
+                    <img class="gallery" src="images/cat_7.jpg">
+                    <img class="gallery" src="images/cat_8.jpg">
+                </div>
+
+                <div class="row">
+                    <img class="gallery" src="images/cat_10.jpg">
+                    <img class="gallery" src="images/cat_11.jpg">
+                    <img class="gallery" src="images/cat_12.jpg">
+                    <img class="gallery" src="images/cat_13.jpg">
+                </div>
+            </div>
+
         </div>
 
         <!-- Spotify Column -->

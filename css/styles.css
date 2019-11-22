@@ -13,6 +13,19 @@
   background-attachment: fixed;
 }
 
+/* Background */
+#young_background{
+  background:
+    linear-gradient(
+        rgba(255, 255, 255, .2),
+        rgba(255, 0, 0, .2)
+    ),
+    url(../images/young.jpg);
+  background-size: 150px;
+  background-repeat: round;
+  background-attachment: fixed;
+}
+
 /* Change font and color of text */
 .text_style{
   background:
@@ -35,8 +48,6 @@
 /* Style the tab */
 .tab {
   overflow: hidden;
-  /* border: 1px solid #ccc;
-  background-color: #f1f1f1; */
 }
 
 /* Style the buttons that are used to open the tab content */
@@ -62,8 +73,7 @@
   background-color: #ddd;
 }
 
-/* Create an active/current tablink class
-  background-color: #ccc; */
+/* Create an active/current tablink class */
 .tab button.active {
     background:
   linear-gradient(
@@ -80,4 +90,13 @@
   padding: 6px 12px;
   border: 1px solid #ccc;
   border-top: none;
+}
+
+img.gallery {
+  height: 180px;
+  padding: 5px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
 }
