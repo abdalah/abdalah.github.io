@@ -7,141 +7,81 @@
     <script src="js/open_tab.js"></script>
     <script src="js/modal.js"></script>
 </head>
-<body id="tracksuit_background">
+<body id="young_background">
 
-    <h1 id="title" class="text_style" onclick="document.getElementById('tracksuit_background').id = 'young_background';">abi</h1>
-
-    <div class="row">
-
-        <!-- Main Column -->
-        <div class="column">
-            <p class="text_style">Hi! I'm abi! You might be wondering why I have this website. Well I don't know either! If you have any suggestions on what I should put here, let me know :)</p>
-
+    <h1 id="title" class="text_style" onclick="document.getElementById('young_background').id = 'tracksuit_background';">abi</h1>
             <!-- Tab links -->
             <div class="tab">
-              <button class="tablinks" onclick="open_tab(event, 'Food')">Food</button>
+              <button class="tablinks" onclick="open_tab(event, 'fruit')">Fruit</button>
+              <button class="tablinks" onclick="open_tab(event, 'cake')">Cake</button>
               <button class="tablinks" onclick="open_tab(event, 'happy_birthday')">Happy Birthday!</button>
+              <button class="tablinks" onclick="open_tab(event, 'music')">Music</button>
+            </div>
+
+
+            <!-- Spotify Column -->
+            <div id="music" class="tabcontent">
+                <h4 class="text_style">I made a playlist of tunes I like. Yes, it's all moody songs by women. No, I will not apologize.</h4>
+                <iframe src="https://open.spotify.com/embed/playlist/0PmsTkc4oVUScmPNERdhYn" width="350" height="400" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            1</div>
+
+            <!-- Tab content -->
+            <div id="fruit" class="tabcontent">
+                <h4 class="text_style">Is this an ordinary photo of me eating cantaloupe?</h4>
+                <p class="text_style">January 2020</p>
+                <img src="images/fruit/cantaloupe_january_2020.jpg" width="350">
+                <h4 class="text_style">Think again!</h4>
+                <img src="images/fruit/cantaloupe_january_2020_zoomed.jpg" width="350">
+              <h4 class="text_style">I was even able to do it out of an orange!</h4>
+                <p class="text_style">July 2018</p>
+                <img src="images/fruit/orange_july_2018.jpg" width="350">
+              <h4 class="text_style">And here is a photo of me eating out of a pineapple!</h4>
+                <p class="text_style">August 2016</p>
+                <img src="images/fruit/pineapple_august_2016.jpg" width="350">
+              <h4 class="text_style">This is me eating cereal out of a watermelon!</h4>
+                <p class="text_style">May 2016</p>
+                <img src="images/fruit/watermelon_may_2016.jpg" width="350">
+              <p class="text_style">Now doesn't that look yum!</p>
             </div>
 
             <!-- Tab content -->
-            <div id="Food" class="tabcontent">
-              <h4 class="text_style">This is me eating cereal out of a watermelon!</h4>
-                <img src="images/watermelon.jpg" height="300">
-              <h4 class="text_style">And here is a photo of me eating out of a pineapple!</h4>
-                <img src="images/pineapple.jpg" height="300">
-              <p class="text_style">Now doesn't that look yum!</p>
+            <div id="cake" class="tabcontent">
+                <h4 class="text_style">Yes. I do love to eat cake and I don't think there's anything wrong with that.</h4>
+              <p class="text_style">July 2018</p>
+                <img src="images/cake/cake_july_2018.jpg" width="350">
+              <p class="text_style">September 2017</p>
+                <img src="images/cake/cake_september_2017.jpg" width="350">
+              <p class="text_style">August 2017</p>
+                <img src="images/cake/cake_august_2017.jpg" width="350">
+              <p class="text_style">June 2017</p>
+                <img src="images/cake/pie_june_2017.jpg" width="350">
+              <p class="text_style">May 2017</p>
+                <img src="images/cake/cake_may_2017.jpg" width="350">
+              <p class="text_style">October 2016</p>
+                <img src="images/cake/cake_october_2016.jpg" width="350">
             </div>
 
             <!-- Tab content -->
             <div id="happy_birthday" class="tabcontent">
               <p class="text_style">In summer 2016, I post happy birthday to all 800+ of my Facebook friends at once. Below are a few examples of my favorites. Note that each person had a unique photo posted on their wall.</p>
-
-                <div class="row">
-                    <div class="column">
-                        <img src="images/cat_1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
-                    </div>
-                    <div class="column">
-                        <img src="images/cat_9.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
-                    </div>
-                    <div class="column">
-                        <img src="images/cat_3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
-                    </div>
-                    <div class="column">
-                        <img src="images/cat_4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="column">
-                        <img src="images/cat_5.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow">
-                    </div>
-                    <div class="column">
-                        <img src="images/cat_6.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow">
-                    </div>
-                    <div class="column">
-                        <img src="images/cat_7.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow">
-                    </div>
-                    <div class="column">
-                        <img src="images/cat_8.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow">
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="column">
-                        <img src="images/cat_10.jpg" onclick="openModal();currentSlide(9)" class="hover-shadow">
-                    </div>
-                    <div class="column">
-                        <img src="images/cat_11.jpg" onclick="openModal();currentSlide(10)" class="hover-shadow">
-                    </div>
-                    <div class="column">
-                        <img src="images/cat_12.jpg" onclick="openModal();currentSlide(11)" class="hover-shadow">
-                    </div>
-                    <div class="column">
-                        <img src="images/cat_13.jpg" onclick="openModal();currentSlide(12)" class="hover-shadow">
-                    </div>
-                </div>
-
-                <!-- The Modal/Lightbox -->
-                <div id="myModal" class="modal">
-                  <span class="close cursor" onclick="closeModal()">&times;</span>
-                  <div class="modal-content">
-
-                    <div class="mySlides">
-                      <div class="numbertext">1 / 4</div>
-                      <img src="images/cat_1.jpg" style="width:100%">
-                    </div>
-
-                    <div class="mySlides">
-                      <div class="numbertext">2 / 4</div>
-                      <img src="images/cat_2.jpg" style="width:100%">
-                    </div>
-
-                    <div class="mySlides">
-                      <div class="numbertext">3 / 4</div>
-                      <img src="images/cat_3.jpg" style="width:100%">
-                    </div>
-
-                    <div class="mySlides">
-                      <div class="numbertext">4 / 4</div>
-                      <img src="images/cat_4.jpg" style="width:100%">
-                    </div>
-
-                    <!-- Next/previous controls -->
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-                    <!-- Caption text -->
-                    <div class="caption-container">
-                      <p id="caption"></p>
-                    </div>
-
-                    <!-- Thumbnail image controls -->
-                    <div class="column">
-                      <img class="demo" src="images/cat_1.jpg" onclick="currentSlide(1)">
-                    </div>
-
-                    <div class="column">
-                      <img class="demo" src="images/cat_2.jpg" onclick="currentSlide(2)">
-                    </div>
-
-                    <div class="column">
-                      <img class="demo" src="images/cat_3.jpg" onclick="currentSlide(3)">
-                    </div>
-
-                    <div class="column">
-                      <img class="demo" src="images/cat_4.jpg" onclick="currentSlide(4)">
-                    </div>
-                  </div>
-                </div>
+                <img src="images/cat/cat_1.jpg" width="350">
+                <img src="images/cat/cat_2.jpg" width="350">
+                <img src="images/cat/cat_3.jpg" width="350">
+                <img src="images/cat/cat_4.jpg" width="350">
+                <img src="images/cat/cat_5.jpg" width="350">
+                <img src="images/cat/cat_6.jpg" width="350">
+                <img src="images/cat/cat_7.jpg" width="350">
+                <img src="images/cat/cat_8.jpg" width="350">
+                <img src="images/cat/cat_9.jpg" width="350">
+                <img src="images/cat/cat_10.jpg" width="350">
+                <img src="images/cat/cat_11.jpg" width="350">
+                <img src="images/cat/cat_12.jpg" width="350">
+                <img src="images/cat/cat_13.jpg" width="350">
 
             </div>
 
         </div>
 
-        <!-- Spotify Column -->
-        <div class="column">
-            <iframe src="https://open.spotify.com/embed/playlist/0PmsTkc4oVUScmPNERdhYn" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-        </div>
     </div>
 
 </body>
