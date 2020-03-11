@@ -17,6 +17,20 @@
     <meta name="language" content="EN">
     <meta name="og:image" content="images/other/tracksuit.jpg">
     <meta name="author" content="Abdalah El-Barrad">
+
+
+    <!-- base url -->
+    <!--base href="/"-->
+    <style>
+        canvas{
+            display: block;
+        }
+        body{
+            margin:0;
+        }
+    </style>
+
+
 </head>
 <body id="young_background">
 
@@ -29,13 +43,28 @@
               <button class="tablinks" onclick="open_tab(event, 'music')">Music</button>
             </div>
 
-    <!--canvas id = "snowCanvas" title = "config to get your own snow effect"></canvas-->
-
+    <script src="snow.js"></script>
+    <script>
+        window.onload = _snowCanvas({
+            el: document.getElementById("young_background"),
+            snowColor: "#a6a6a6",
+            background: "black",
+            maxSpeed: 4,
+            minSpeed: 1,
+            width: "",
+            height: "",
+            amount: 150,
+            rMax: 4,
+            rMin: 1
+        });
+    </script>
 
             <!-- Spotify Column -->
             <div id="music" class="tabcontent">
                 <h4 class="text_style">I made a playlist of tunes I like. Yes, it's all moody songs by women. No, I will not apologize.</h4>
                 <iframe src="https://open.spotify.com/embed/playlist/0PmsTkc4oVUScmPNERdhYn" width="350" height="400" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                <h4 class="text_style">Here is a similar playlist for those in Syria and do not have access to Spotify.</h4>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLJ6mRqYwYgmFLBbmLZ-YesYPZGGKjolJe" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             1</div>
 
             <!-- Tab content -->
@@ -60,6 +89,8 @@
             <!-- Tab content -->
             <div id="cake" class="tabcontent">
                 <h4 class="text_style">Yes. I do love to eat cake and I don't think there's anything wrong with that.</h4>
+              <p class="text_style">February 2020</p>
+                <img src="images/cake/cake_february_2020.jpg" width="350">
               <p class="text_style">July 2018</p>
                 <img src="images/cake/cake_july_2018.jpg" width="350">
               <p class="text_style">September 2017</p>
